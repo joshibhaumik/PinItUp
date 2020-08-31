@@ -8,8 +8,8 @@ import styles from "../../styles/layout";
 function Layout(props) {
   return (
     <View>
-      <Header heading={"this.props.heading"} />
-      <View style={{ marginHorizontal: 10 }}>
+      <Header heading={props.heading} />
+      <View style={{ margin: 15 }}>
         <ScrollView style={styles.container}>{props.children}</ScrollView>
       </View>
     </View>

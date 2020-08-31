@@ -3,15 +3,15 @@ import { ToastAndroid, View, Text } from "react-native";
 
 import Home from "./Home";
 import Layout from "./layouts/Layout";
-import Themes from "./Themes";
+// import Themes from "./Themes";
 import Settings from "./Settings";
 
 function Main() {
   return (
-    <Layout>
+    <Layout heading={"PinItUp"}>
       {/* <Home /> */}
-      <Themes />
-      {/* <Settings /> */}
+      {/* <Themes /> */}
+      <Settings />
     </Layout>
   );
 }

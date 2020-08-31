@@ -1,11 +1,11 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, ImagePropTypes } from "react-native";
 import Styles from "../../styles/header.js";
 
-function Header() {
+function Header(props) {
   return (
     <View style={Styles.wrapper}>
-      <Text style={Styles.text}>PinItUp</Text>
+      <Text style={Styles.text}>{props.heading}</Text>
     </View>
   );
 }

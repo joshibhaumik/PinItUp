@@ -10,7 +10,7 @@ import {
 import RadioButton from "./features/RadioButton";
 
 import styles from "../styles/themes.js";
-import { themes } from "../data/themes";
+// import { themes } from "../data/themes";
 
 const Theme = colors => {
   let color = colors.item.color;
@@ -35,11 +35,11 @@ function Themes(props) {
   return (
     <View>
       <View>
-        <FlatList
+        {/* <FlatList
           data={theme}
           renderItem={Theme}
           keyExtractor={item => item.id}
-        />
+        /> */}
       </View>
       <View style={{ justifyContent: "center" }}>
         <TouchableOpacity onPress={ApplyChanges} style={styles.buttonContainer}>
